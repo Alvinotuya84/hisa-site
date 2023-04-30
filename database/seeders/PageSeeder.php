@@ -29,11 +29,9 @@ class PageSeeder extends Seeder
                             'description'=>'Bring your trading ventures go around the world, way beyond the space of your trading account.',
                         ],
                         'investment_steps'=>[
-                            'description'=>"Choose an account tier and submit your application",
-                            'description'=>"Choose an account tier and submit your application",
-                            'description'=>"Choose an account tier and submit your application",
-
-
+    ['description'=>"Choose an account tier and submit your application"],
+    ['description'=>"Choose an account tier and submit your application"],
+    ['description'=>"Choose an account tier and submit your application"],
                         ],
                         'download_text'=>"Trade with Hisa app and trade directly with leading platform"
 
@@ -43,14 +41,14 @@ class PageSeeder extends Seeder
                     [
                         'title'=>'About',
                         'slug'=>'/about',
-                        'content'=>[
+                        'content'=>json_encode([
                             'title'=>"Putting our clients first since 1986",
                             'title_description'=>"For more than 30 years, we’ve been empowering clients by helping them take control of their financial lives.",
                             'purposes'=>[
                                 [
                                     'title'=>"Our goal",
                                     'icon'=>"fa-hourglass-end",
-                                    "description"=>""
+                                    "description"=>"Empowering Africa to be financially independent by providing simplified investment solutions and educational content"
 
                                 ]
                                 ],
@@ -58,12 +56,19 @@ class PageSeeder extends Seeder
                                 "team_title"=>"Putting our clients first since 2020",
                                 "team_description"=>"Serving more than 5 years, we’ve been empowering clients by helping them take control of their finances",
                                 "leaders"=>[
+                                    [
                                     'name'=>"Eric Jackson",
-                                    
-                                ]
+                                    "image"=>"/eric-jackson.png",
+                                ]   ,
+
+
+                                    ],
+                                    'total_users'=>"",
+                                    "co"
+
                             ]
 
-                        ]
+                        ])
                     ]
         ]);
 

@@ -1,5 +1,5 @@
 
-    <header>
+    {{-- <header>
         <!-- header content begin -->
         <div class="uk-section uk-padding-remove-vertical">
             <nav class="uk-navbar-container uk-navbar-blue" data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
@@ -48,9 +48,72 @@
             </nav>
         </div>
         <!-- header content end -->
+    </header> --}}
+
+
+
+    <header class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://www.hisa.co/img/logo.png" alt="logo" width="110" height="40" class="d-inline-block">
+            </a>
+            <div class="collapse navbar-collapse d-flex justify-content-between d-none d-xl-block" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/"   aria-expanded="false">Home</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="markets.html">Markets</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="dropdownCompany" data-bs-toggle="dropdown" aria-expanded="false">Company</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="{{route('about')}}">About</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="careers.html">Careers</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">Education</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="dropdownResources" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/getting-started/introduction/">Documentation<i class="fas fa-square-arrow-up-right fa-sm"></i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="help-center.html">Help Center</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="customers.html">Customers</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="roadmap.html">Roadmap</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="legal-docs.html">Legal Docs<i class="fas fa-gavel fa-sm"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="optional-link d-flex align-items-center ms-4 d-none d-xl-block">
+                    <a href="{{ route('login') }}" class="btn btn-link link-secondary text-decoration-none">Sign in</a>
+                    <a href="{{ route('login') }}" class="btn btn-outline-primary rounded-pill">Get started<i class="fas fa-arrow-right fa-sm ms-1"></i></a>
+                </div>
+            </div>
+        </div>
     </header>
-
-
 {{-- <nav class="navbar navbar-dark navbar-expand-md bg-dark py-3">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="{{ route('home') }}">

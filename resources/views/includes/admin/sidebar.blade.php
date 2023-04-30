@@ -70,7 +70,7 @@
             class="menu-item {{ request()->is('posts') ? 'active' : '' }} {{ request()->is('posts/*/*') ? 'active' : '' }}">
             <a href="{{ route('posts.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-collection"></i>
-                <div data-i18n="Basic">Pages</div>
+                <div data-i18n="Basic">Posts</div>
             </a>
         </li>
 
