@@ -277,6 +277,12 @@
         </div>                    
     </section>   
     <section class="pt-1 pb-5 pt-md-2 pb-md-5 py-lg-5 in-avo-3">
+
+        <div class="col-md-12 d-flex flex-column align-items-center">
+            <h1 class="display-3">Pick any asset you like from a wide</h1>
+            <h1 class="display-3">Range of <span class="text-primary" >US</span> and <span class="text-primary" >Kenyan Stocks</span> </h1>
+            <h1 class="text-warning display-3">ETFs</h1>
+        </div>
         <div class="container etfs ">
                 <div class="row etfs-content flex-nowrap">
                     {{-- <div class="col-md-12 col-lg-5 position-relative">
@@ -624,7 +630,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12 col-lg-9 text-center">
-                    <h2>Get started with Avo.</h2>
+                    <h2>Get started with Hisa.</h2>
                     <p class="lead mb-4">Global access to financial markets from a single account</p>
                     <a href="#" class="btn btn-outline-secondary mb-2 mb-md-0">
                         <div class="d-flex align-items-center text-start">
@@ -638,7 +644,7 @@
                         <div class="d-flex align-items-center text-start">
                             <img src="{{asset('avo-assets/img/in-apple-icon.svg')}}" alt="icon" width="29" height="36">
                             <div>
-                                <span class="h6">Download for</span><br>macOS Monterey
+                                <span class="h6">Download for</span><br>macOS 
                             </div>
                         </div>
                     </a>
