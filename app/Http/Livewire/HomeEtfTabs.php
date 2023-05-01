@@ -20,7 +20,8 @@ class HomeEtfTabs extends Component
 
     public function mount()
     {
-        
+        $this->setTabPosition();
+
         $this->tabsData = collect([
             [
                 'label' => 'US Stocks',
@@ -49,13 +50,17 @@ class HomeEtfTabs extends Component
     {
         $this->activeTabIndex = $index;
     }
-
-    public function updatedActiveTabIndex()
+    public function setTabPosition()
     {
         $currentTab = $this->tabsRef[$this->activeTabIndex] ?? null;
         $this->tabUnderlineLeft = optional($currentTab)->offsetLeft ?? 0;
         $this->tabUnderlineWidth = optional($currentTab)->clientWidth ?? 0;
     }
+    public function updatedActiveTabIndex()
+    {
+        $this->setTabPosition();
+    }
+
 
     public function render()
     {

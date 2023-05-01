@@ -12,72 +12,86 @@
         </div>
         <div id="tabs" class="d-flex gap-3 border-bottom tabs-content">
             @foreach($tabsData as $idx => $tab)
-            <button wire:click="setActiveTabIndex({{ $idx }})" class="pt-2 pb-3 tab-button border-0 bg-transparent">
+            <button wire:click="setActiveTabIndex({{ $idx }})" 
+            class="pt-2 pb-3 tab-button border-0 bg-transparent @if($activeTabIndex ===  $idx) active @endif">
                 {{ $tab['label'] }}
             </button>
             @endforeach
         </div>
-        <span class="position-absolute  bottom-0 d-block w-25 bg-primary transition-all duration-300" style="left: {{ $tabUnderlineLeft }}px; width: {{ $tabUnderlineWidth }}px; height: 1px;"></span>
+        <span
+        class="absolute bottom-0 block h-1 bg-teal-500 transition-all duration-300"
+        style="left: {{ $tabUnderlineLeft }}px; width: {{ $tabUnderlineWidth }}px"
+    ></span>
     </div>
 </div>
 @push('addon-script')
-<script>
+<script src="{{asset('avo-assets/js/addons/etf-tabs.js')}}">
 
-// $(document).ready(function() {
-//   var tabCount = $('.tab-button').length;
-//   var currentIndex = 0;
-//   var intervalId;
-
-//   function switchTab() {
-//     $('.tab-button').eq((currentIndex + 1) % tabCount).click();
-//   }
-
-//   intervalId = setInterval(switchTab, 3000);
-
-//   $('.tab-button').on('click', function() {
-//     clearInterval(intervalId);
-
-//     $('.tab-button').removeClass('active');
-//     $(this).addClass('active');
-
-//     var target = $(this).data('target');
-//     $('.tab-panel').removeClass('active');
-//     $('#' + target).addClass('active');
-
-//     setTimeout(function() {
-//       intervalId = setInterval(switchTab, 3000);
-//     }, 3000);
-
-//     currentIndex = $(this).index();
-//   });
-
-//   $(document).on('click', '.tab-button:last-child', function() {
-//     $('.tab-button:first-child').click();
-//   });
-// });
-
-$(function(){
-  var currTab = 0;
-
-var totalTabs = $("#tabs > button").length;
-
-function cycle() {
-
-    $("#tabs > button").eq(currTab).click();
-    $('.tab-button').click(function(){
-      $("#tab-panel-data").fadeOut(1000);
-      setTimeout(() => {
-        $("#tab-panel-data").fadeIn(1000);
-      }, 4000);
-    })
-    currTab++;
-
-    if (currTab == totalTabs) {
-        currTab = 0;
-    }
+</script>
+@endpush
+@push('addon-style')
+    <style>
+        .relative {
+    position: relative;
 }
 
-var i = setInterval(cycle, 4000);
-})
-</script>
+.flex {
+    display: flex;
+}
+
+.space-x-3 > * + * {
+    margin-left: 0.75rem;
+}
+
+.border-b {
+    border-bottom: 1px solid #7f5ceb;
+}
+
+.pt-2 {
+    padding-top: 0.5rem;
+}
+
+.pb-3 {
+    padding-bottom: 0.75rem;
+}
+
+.active {
+    font-weight: bold;
+    color: #7f5ceb;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.bottom-0 {
+    bottom: 0;
+}
+
+.block {
+    display: block;
+}
+
+.h-1 {
+    height: 0.25rem;
+}
+
+.bg-teal-500 {
+    background-color: #2563eb;
+}
+
+.transition-all {
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.py-4 > p {
+    margin: 0;
+}
+    </style>
 @endpush

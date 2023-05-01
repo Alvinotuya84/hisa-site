@@ -133,7 +133,7 @@
 
                             <a href="#" class="btn btn-warning">
                                 <div class="d-flex align-items-center text-start">
-                                    <img src="{{asset('assets/img/appstore.png')}}" alt="icon" width="36" height="36">
+                                    <img src="{{asset('assets/img/appstore.png')}}" alt="icon" width="30" height="30">
                                     <div>
                                         <span class="text-white">Download On The</span><br><span class="h5 text-white">App Store</span>
                                     </div>
@@ -141,7 +141,7 @@
                             </a>
                             <a href="#" class="btn btn-primary mb-2 mb-md-0">
                                 <div class="d-flex align-items-center text-start">
-                                    <img src="{{asset('assets/img/playstore.png')}}" alt="icon" width="36" height="36">
+                                    <img src="{{asset('assets/img/playstore.png')}}" alt="icon" width="36" height="20">
                                     <div>
                                         Get It On <br><span class="h4 text-white">Playstore</span>
                                     </div>
@@ -658,21 +658,7 @@
 @push('addon-style')
 
     <style>
-        @media (min-width: 992px) {
-    .nav-pills-custom .nav-link::before {
-        content: '';
-        display: block;
-        border-top: 8px solid transparent;
-        border-left: 10px solid #fff;
-        border-bottom: 8px solid transparent;
-        position: absolute;
-        top: 50%;
-        right: -10px;                            
 
-        transform: translateY(-50%);
-        opacity: 0;
-    }
-}
 
 .nav-pills-custom .nav-link.active::before {
     opacity: 1;
