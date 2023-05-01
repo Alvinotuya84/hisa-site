@@ -121,8 +121,33 @@
         
         
                 <div class="row">
-                    <div class="col-md-6">
-                        
+                    <div class="col-md-6 d-flex flex-column" >
+                        <h1 class="text-black display-1">Borderless </h1>
+                        <h1 class="text-black display-1">Investments </h1>
+
+                        <h1 class="text-black display-1">For </h1>
+
+                        <h1 class="text-black display-1">Africa </h1>
+
+                        <div class="mb-5 py-5">
+
+                            <a href="#" class="btn btn-warning">
+                                <div class="d-flex align-items-center text-start">
+                                    <img src="{{asset('assets/img/appstore.png')}}" alt="icon" width="36" height="36">
+                                    <div>
+                                        <span class="text-white">Download On The</span><br><span class="h5 text-white">App Store</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="btn btn-primary mb-2 mb-md-0">
+                                <div class="d-flex align-items-center text-start">
+                                    <img src="{{asset('assets/img/playstore.png')}}" alt="icon" width="36" height="36">
+                                    <div>
+                                        Get It On <br><span class="h4 text-white">Playstore</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <!-- Tabs nav -->

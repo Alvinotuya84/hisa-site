@@ -24,19 +24,23 @@ class HomeEtfTabs extends Component
         $this->tabsData = collect([
             [
                 'label' => 'US Stocks',
-                'content' => 'Ut irure mollit nulla eiusmod excepteur laboris elit sit anim magna tempor excepteur labore nulla.'
+                'gif' => 'assets/img/kenyan_stocks.gif',
+                'country_flag'=>'assets/img/Flag_of_United_States.png'
             ],
             [
                 'label' => 'Kenyan Stocks',
-                'content' => 'Kenyan dolor et quis in incididunt aute. Ullamco voluptate consectetur dolor officia sunt est dolor sint.'
+                'gif' => 'assets/img/ke-stocks.gif',
+                'country_flag'=>'assets/img/Flag_of_Kenya.png'
             ],
             [
                 'label' => 'US ETFs',
-                'content' => 'US ETFs et quis in incididunt aute. Ullamco voluptate consectetur dolor officia sunt est dolor ds.'
+                'gif' => 'assets/img/us_etfs.gif',
+                'country_flag'=>'assets/img/Flag_of_United_States.png'
             ],
             [
                 'label' => 'Learning',
-                'content' => 'Learning et quis in incididunt aute. Ullamco voluptate consectetur dolor officia sunt est dolor ds.'
+                'gif' => 'assets/img/learning.gif',
+                'country_flag'=>'assets/img/Flag_of_Kenya.png'
             ]
         ]);
     }

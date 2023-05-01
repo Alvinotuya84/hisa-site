@@ -108,8 +108,8 @@
                     </li>
                 </ul>
                 <div class="optional-link d-flex align-items-center ms-4 d-none d-xl-block">
-                    <a href="{{ route('login') }}" class="btn btn-link link-secondary text-decoration-none">Sign in</a>
-                    <a href="{{ route('login') }}" class="btn btn-outline-primary rounded-pill">Get started<i class="fas fa-arrow-right fa-sm ms-1"></i></a>
+                    {{-- <a href="{{ route('login') }}" class="btn btn-link link-secondary text-decoration-none">Sign in</a> --}}
+                    <a href="{{ route('login') }}" class="btn btn-primary">Download</a>
                 </div>
             </div>
         </div>
