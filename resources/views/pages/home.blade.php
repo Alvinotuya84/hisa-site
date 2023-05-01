@@ -206,25 +206,25 @@
             <div class="row row-cols-md-3 row-cols-lg-4 text-center mb-5">
                 <div class="col">
                     <h1 class="mb-0">
-                        <span class="count" data-counter-end="183092">183092</span><span class="text-primary">+</span>
+                        <span class="count text-black" data-counter-end="183092">183092</span><span class="text-primary">+</span>
                     </h1>
                     <p class="text-muted">Daily trades</p>
                 </div>
                 <div class="col">
                     <h1 class="mb-0">
-                        <span class="count" data-counter-end="364887">364887</span><span class="text-primary">+</span>
+                        <span class="count text-black" data-counter-end="364887">364887</span><span class="text-primary">+</span>
                     </h1>
                     <p class="text-muted">Clients</p>
                 </div>
                 <div class="col d-md-none d-lg-block">
                     <h1 class="mb-0">
-                        <span class="count" data-counter-end="96">96</span> billion<span class="text-primary">+</span>
+                        <span class="count text-black" data-counter-end="96">96</span> billion<span class="text-primary">+</span>
                     </h1>
                     <p class="text-muted">Asset management</p>
                 </div>
                 <div class="col">
                     <h1 class="mb-0">
-                        <span class="count" data-counter-end="23">23</span> billion<span class="text-primary">+</span>
+                        <span class="count text-black" data-counter-end="23">23</span> billion<span class="text-primary">+</span>
                     </h1>
                     <p class="text-muted">Daily trade volume</p>
                 </div>
@@ -234,7 +234,7 @@
                     <div class="icon-wrap bg-primary rounded-circle flex-shrink-0 mb-2">
                         <img src="{{asset('avo-assets/img/in-avo-2-icon-1.png')}}" alt="icon" width="38" height="38">
                     </div>
-                    <h4>Various assets/</h4>
+                    <h4 class="text-black">Various assets/</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elited do eiusmod tempo officios incididunt.</p>
                 </div>
                 <div class="col active-col">
@@ -248,7 +248,7 @@
                     <div class="icon-wrap bg-primary rounded-circle flex-shrink-0 mb-2">
                         <img src="{{asset('avo-assets/img/in-avo-2-icon-3.png')}}" alt="icon" width="38" height="38">
                     </div>
-                    <h4>Enhanced tools</h4>
+                    <h4 class="text-black">Enhanced tools</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elited do eiusmod tempo officios incididunt.</p>
                 </div>
             </div>
@@ -261,7 +261,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="col-md-12 col-lg-7">
-                        <h2>Getting started with shares in Kenya on the <span class="text-highlight">Hisa App</span>  </h2>
+                        <h2 class="text-black">Getting started with shares in Kenya on the <span class="text-highlight text-black">Hisa App</span>  </h2>
 
                     </div>
                     <div class="card border-0 bg-hisa">
@@ -279,8 +279,8 @@
     <section class="pt-1 pb-5 pt-md-2 pb-md-5 py-lg-5 in-avo-3">
 
         <div class="col-md-12 d-flex flex-column align-items-center">
-            <h1 class="display-3">Pick any asset you like from a wide</h1>
-            <h1 class="display-3">Range of <span class="text-primary" >US</span> and <span class="text-primary" >Kenyan Stocks</span> </h1>
+            <h1 class="display-3 text-black">Pick any asset you like from a wide</h1>
+            <h1 class="display-3 text-black">Range of <span class="text-primary" >US</span> and <span class="text-primary" >Kenyan Stocks</span> </h1>
             <h1 class="text-warning display-3">ETFs</h1>
         </div>
         <div class="container etfs ">
@@ -630,13 +630,13 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12 col-lg-9 text-center">
-                    <h2>Get started with Hisa.</h2>
-                    <p class="lead mb-4">Global access to financial markets from a single account</p>
+                    <h2 class="text-black">Get started with Hisa.</h2>
+                    <p class="lead mb-4 text-black">Global access to financial markets from a single account</p>
                     <a href="#" class="btn btn-outline-secondary mb-2 mb-md-0">
                         <div class="d-flex align-items-center text-start">
                             <img src="{{asset('avo-assets/img/in-windows-icon.svg')}}" alt="icon" width="36" height="36">
                             <div>
-                                <span class="h6">Download for</span><br>Microsoft Windows 11
+                                <span class="h6 text-black">Download for</span><br>Microsoft Windows 11
                             </div>
                         </div>
                     </a>
@@ -644,7 +644,7 @@
                         <div class="d-flex align-items-center text-start">
                             <img src="{{asset('avo-assets/img/in-apple-icon.svg')}}" alt="icon" width="29" height="36">
                             <div>
-                                <span class="h6">Download for</span><br>macOS 
+                                <span class="h6 text-black">Download for</span><br>macOS 
                             </div>
                         </div>
                     </a>

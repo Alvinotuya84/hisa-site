@@ -82,7 +82,7 @@
     <div class="container">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-4 gy-lg-0">
             <div class="col">
-                <h5>Overview</h5>
+                <h5 class="text-black">Overview</h5>
                 <ul class="list-unstyled">
                     <li><a href="#">Open account</a></li>
                     <li><a href="#">Our company</a></li>
@@ -91,7 +91,7 @@
                 </ul>
             </div>
             <div class="col">
-                <h5>Account</h5>
+                <h5 class="text-black">Account</h5>
                 <ul class="list-unstyled">
                     <li><a href="#">Client services</a></li>
                     <li><a href="#">VIP offering</a></li>
@@ -101,7 +101,7 @@
                 </ul>
             </div>
             <div class="col">
-                <h5>Others</h5>
+                <h5 class="text-black">Others</h5>
                 <ul class="list-unstyled">
                     <li><a href="#">Trade inspirations</a></li>
                     <li><a href="#">Outrageous predictions</a></li>
@@ -110,7 +110,7 @@
                 </ul>
             </div>
             <div class="col">
-                <h5>Get in Touch</h5>
+                <h5 class="text-black">Get in Touch</h5>
                 <p>Contact us any time for getting support.</p>
                 <a class="footer-email" href="mailto:hello@avo-invest.id">hello@avo-invest.id</a>
                 <!-- social media begin -->
