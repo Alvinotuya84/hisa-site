@@ -121,51 +121,13 @@
         
         
                 <div class="row">
-                    <div class="col-md-3">
-                        <!-- Tabs nav -->
-                        <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                            <a class="nav-link mb-3 p-3 shadow active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
-                                <i class="fas fa-briefcase mr-2"></i>
-                                <span class="font-weight-bold small text-uppercase">Portfolio</span></a>
-        
-                            <a class="nav-link mb-3 p-3 shadow" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
-                                <i class="fa-solid fa-calculator mr-2"></i>
-                                <span class="font-weight-bold small text-uppercase">Fractions</span></a>
-        
-                            <a class="nav-link mb-3 p-3 shadow" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
-                                <i class="fa-solid fa-piggy-bank mr-2"></i>                            
-                                <span class="font-weight-bold small text-uppercase">Saving Plans</span></a>
-        
-                            <a class="nav-link mb-3 p-3 shadow" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
-                                <i class="fa-solid fa-arrow-up mr-2"></i>   
-                               <span class="font-weight-bold small text-uppercase">Round Ups</span></a>
-                            </div>
+                    <div class="col-md-6">
+                        
                     </div>
-        
-        
-                    <div class="col-md-9">
-                        <!-- Tabs content -->
-                        <div class="tab-content" id="v-pills-tabContent">
-                            <div class="tab-pane fade shadow rounded bg-white show active p-5" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                                <h4 class="font-italic mb-4">Portfolio</h4>
-                                <p class="font-italic text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
-                            
-                            <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                                <h4 class="font-italic mb-4">Fractions</h4>
-                                <p class="font-italic text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
-                            
-                            <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                                <h4 class="font-italic mb-4">Saving Plans</h4>
-                                <p class="font-italic text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
-                            
-                            <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                                <h4 class="font-italic mb-4">Round Ups</h4>
-                                <p class="font-italic text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
-                        </div>
+                    <div class="col-md-6">
+                        <!-- Tabs nav -->
+
+                        <livewire:home-etf-tabs /> 
                     </div>
                 </div>
             </div>
@@ -175,7 +137,7 @@
 
 
 
-    <section class="pb-5 in-avo-1">
+    {{-- <section class="pb-5 in-avo-1">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -211,7 +173,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- section content end -->
     <!-- section content begin -->
     <section class="py-5 in-avo-2">
@@ -290,112 +252,274 @@
         </div>                    
     </section>   
     <section class="pt-1 pb-5 pt-md-2 pb-md-5 py-lg-5 in-avo-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-lg-5 position-relative">
-                    <img class="img-decor" src="{{asset('avo-assets/img/in-avo-3-decor-1.svg')}}" alt="decor">
-                    <div class="card card-body card-tv">
-                        <div id="tradingview-widget"></div>
+        <div class="container etfs ">
+                <div class="row etfs-content flex-nowrap">
+                    {{-- <div class="col-md-12 col-lg-5 position-relative">
+                        <img class="img-decor" src="{{asset('avo-assets/img/in-avo-3-decor-1.svg')}}" alt="decor">
+                        <div class="card card-body card-tv">
+                            <div id="tradingview-widget"></div>
+                        </div>
+                    </div> --}}
+                    <div class="col-md-12 col-lg-4 text-nowrap">
+                        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-1 mt-2">
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex align-items-center justify-content-center">
+                                        <img height="50" width="50" src="{{ asset('assets/img/amazon.png')}}"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex align-items-center justify-content-center">
+                                        <img height="50" width="50" src="{{ asset('assets/img/pepsi.png')}}"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex align-items-center justify-content-center">
+                                        <img height="50" width="50" src="{{ asset('assets/img/apple.png')}}"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex align-items-center justify-content-center">
+                                        <img height="50" width="50" src="{{ asset('assets/img/equity.png')}}"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                            </div>
+                        </div>
+                        
                     </div>
-                </div>
-                <div class="col-md-12 col-lg-7">
-                    <h2>Find the products that <span class="text-highlight">match your needs</span> and desired risk level.</h2>
-                    <p>Sed ut perspiciatis unde omnis natus error voluptatem accusantium doloreme laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
-                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-1 mt-2">
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="icon-wrap icon-wrap-micro bg-yellow mb-0">
-                                        EQ
+                    <div class="col-md-12 col-lg-4 text-nowrap">
+                        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-1 mt-2">
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex align-items-center justify-content-center">
+                                        <img height="50" width="50" src="{{ asset('assets/img/apple.png')}}"/>
                                     </div>
-                                    <p class="fw-bold small text-primary mb-0">Stocks</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="icon-wrap icon-wrap-micro bg-green mb-0">
-                                        ET
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex align-items-center justify-content-center">
+                                        <img height="50" width="50" src="{{ asset('admin/assets/img/avatars/1.png')}}"/>
                                     </div>
-                                    <p class="fw-bold small text-primary mb-0">ETFs</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="icon-wrap icon-wrap-micro bg-red mb-0">
-                                        CM
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex align-items-center justify-content-center">
+                                        <img height="50" width="50" src="{{ asset('assets/img/microsoft.png')}}"/>
                                     </div>
-                                    <p class="fw-bold small text-primary mb-0">Commodities</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="icon-wrap icon-wrap-micro bg-blue mb-0">
-                                        MF
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex align-items-center justify-content-center">
+                                        <img height="50" width="50" src="{{ asset('assets/img/nvidia.png')}}"/>
                                     </div>
-                                    <p class="fw-bold small text-primary mb-0">Mutual funds</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="icon-wrap icon-wrap-micro bg-grey mb-0">
-                                        FX
-                                    </div>
-                                    <p class="fw-bold small text-primary mb-0">Forex</p>
-                                </div>
+                            <div class="col">
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="icon-wrap icon-wrap-micro bg-lightgreen mb-0">
-                                        FX
-                                    </div>
-                                    <p class="fw-bold small text-primary mb-0">Bond</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="icon-wrap icon-wrap-micro bg-purple mb-0">
-                                        CT
-                                    </div>
-                                    <p class="fw-bold small text-primary mb-0">Crypto</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="icon-wrap icon-wrap-micro bg-orange mb-0">
-                                        LO
-                                    </div>
-                                    <p class="fw-bold small text-primary mb-0">Listed options</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="icon-wrap icon-wrap-micro bg-lightgrey mb-0">
-                                        FU
-                                    </div>
-                                    <p class="fw-bold small text-primary mb-0">Futures</p>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
-                    <a href="#" class="btn btn-link link-primary text-decoration-none my-2 px-0">See more instruments<i class="fas fa-arrow-right ms-1"></i></a>
+                    <div class="col-md-12 col-lg-4 text-nowrap">
+                        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-1 mt-2">
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex align-items-center justify-content-center">
+                                        <img height="50" width="50" src="{{ asset('assets/img/pepsi.png')}}"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex align-items-center justify-content-center">
+                                        <img height="50" width="50" src="{{ asset('assets/img/coca.png')}}"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex align-items-center justify-content-center">
+                                        <img height="50" width="50" src="{{ asset('admin/assets/img/avatars/1.png')}}"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex align-items-center justify-content-center">
+                                        <img height="50" width="50" src="{{ asset('admin/assets/img/avatars/1.png')}}"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                            </div>
+                        </div>
+                        
+                    </div> 
+                    <div class="col-md-12 col-lg-4 text-nowrap">
+                        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-1 mt-2">
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex align-items-center justify-content-center">
+                                        <img height="50" width="50" src="{{ asset('assets/img/pepsi.png')}}"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex align-items-center justify-content-center">
+                                        <img height="50" width="50" src="{{ asset('assets/img/coca.png')}}"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex align-items-center justify-content-center">
+                                        <img height="50" width="50" src="{{ asset('admin/assets/img/avatars/1.png')}}"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex align-items-center justify-content-center">
+                                        <img height="50" width="50" src="{{ asset('admin/assets/img/avatars/1.png')}}"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-12 col-lg-4 text-nowrap">
+                        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-1 mt-2">
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex align-items-center justify-content-center">
+                                        <img height="50" width="50" src="{{ asset('assets/img/pepsi.png')}}"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex align-items-center justify-content-center">
+                                        <img height="50" width="50" src="{{ asset('assets/img/coca.png')}}"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex align-items-center justify-content-center">
+                                        <img height="50" width="50" src="{{ asset('admin/assets/img/avatars/1.png')}}"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex align-items-center justify-content-center">
+                                        <img height="50" width="50" src="{{ asset('admin/assets/img/avatars/1.png')}}"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                            </div>
+                        </div>
+                        
+                    </div> 
+                    <div class="col-md-12 col-lg-4 text-nowrap">
+                        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-1 mt-2">
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex align-items-center justify-content-center">
+                                        <img height="50" width="50" src="{{ asset('assets/img/pepsi.png')}}"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex align-items-center justify-content-center">
+                                        <img height="50" width="50" src="{{ asset('assets/img/coca.png')}}"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex align-items-center justify-content-center">
+                                        <img height="50" width="50" src="{{ asset('admin/assets/img/avatars/1.png')}}"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body d-flex align-items-center justify-content-center">
+                                        <img height="50" width="50" src="{{ asset('admin/assets/img/avatars/1.png')}}"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                            </div>
+                        </div>
+                        
+                    </div>  
                 </div>
-            </div>
+            
         </div>
     </section>
 
@@ -512,7 +636,7 @@
         border-bottom: 8px solid transparent;
         position: absolute;
         top: 50%;
-        right: -10px;                            <i class="fa fa-check mr-2"></i>
+        right: -10px;                            
 
         transform: translateY(-50%);
         opacity: 0;
@@ -523,7 +647,24 @@
     opacity: 1;
 }
 
+.etfs{
+    white-space: nowrap;
+    overflow: hidden;
 
+}
+.etfs-content{
+    animation: marquee 20s linear infinite forwards;
+}
+
+
+      @keyframes marquee {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100.6%);
+        }
+      }
 
     </style>
 @endpush

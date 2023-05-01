@@ -19,10 +19,12 @@
     @stack('prepend-style')
     @include('includes.frontend.style')
     @stack('addon-style')
+    @livewireStyles
 
 </head>
 
 <body style="background: #f3f2f3;">
+    @livewireScripts
     @include('sweetalert::alert')
 
     @include('includes.frontend.navbar')
