@@ -562,7 +562,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="col-md-12 col-lg-7">
-                        <h2><span class="text-highlight">Hisa Webinar:</span> Investment Strategies  </h2>
+                        <h2 class="text-black"><span class="text-highlight text-black">Hisa Webinar:</span> Investment Strategies  </h2>
 
                     </div>
                     <div class="card border-0 bg-hisa">
