@@ -9,8 +9,10 @@ class PagesController extends Controller
 {
     //
     public function markets(){
-        $general_setting = GeneralSetting::first();
 
         return view('pages.markets');
+    }
+    public function careers(){
+        return view('pages.careers');
     }
 }

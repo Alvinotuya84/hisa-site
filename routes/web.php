@@ -30,6 +30,8 @@ Route::get('/', [HomeController::class, 'index'])
 Route::get('/categories', [HomeController::class, 'showCategories'])
     ->name('show-categories');
 Route::get('/markets',[PagesController::class,'markets']);    
+Route::get('/careers',[PagesController::class,'careers']);    
+
 
 Route::get('/about', function () {
     // General Setting of the website
