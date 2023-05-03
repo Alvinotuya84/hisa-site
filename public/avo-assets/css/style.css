@@ -7,10 +7,17 @@
   font-display: block;
 }
 @font-face {
-  font-family: "DM Sans";
+  font-family: "Avenic Black";
   font-style: normal;
   font-weight: 700;
-  src: local("DM Sans Bold"), local("DM-Sans-Bold"), url("../fonts/dm-sans-v11-latin-700.woff2") format("woff2"), url("../fonts/dm-sans-v11-latin-700.woff") format("woff");
+  src: url("../fonts/Avenir-Black.ttf") format('truetype');
+  font-display: block;
+}
+@font-face {
+  font-family: "Averia Libre";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Averia_Libre/AveriaLibre-Regular.ttf") format('truetype');
   font-display: block;
 }
 :root {
@@ -130,6 +137,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
+  font-family:'Averia Libre' , sans-serif;
 }
 @media (min-width: 1200px) {
   h1, .h1 {
@@ -139,6 +147,7 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: calc(1.325rem + 0.9vw);
+  font-family: 'Averia Libre' , sans-serif;
 }
 @media (min-width: 1200px) {
   h2, .h2 {
@@ -157,6 +166,7 @@ h3, .h3 {
 
 h4, .h4 {
   font-size: calc(1.275rem + 0.3vw);
+  font-family: 'Averia Libre', sans-serif;
 }
 @media (min-width: 1200px) {
   h4, .h4 {
@@ -503,6 +513,7 @@ progress {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 300;
   line-height: 1.2;
+  font-family :'Averia Libre', sans-serif;
 }
 @media (min-width: 1200px) {
   .display-1 {
@@ -3196,7 +3207,7 @@ textarea.form-control-lg {
   --bs-dropdown-link-color: rgba(0, 0, 0, 0.8);
   --bs-dropdown-link-hover-color: #7f5ceb;
   --bs-dropdown-link-hover-bg: none;
-  --bs-dropdown-link-active-color: #ea86a8;
+  --bs-dropdown-link-active-color: #7f5ceb;
   --bs-dropdown-link-active-bg: none;
   --bs-dropdown-link-disabled-color: #adb5bd;
   --bs-dropdown-item-padding-x: 10px;
@@ -3461,7 +3472,7 @@ textarea.form-control-lg {
   --bs-dropdown-link-hover-color: #fff;
   --bs-dropdown-divider-bg: rgba(0, 0, 0, 0.15);
   --bs-dropdown-link-hover-bg: rgba(255, 255, 255, 0.15);
-  --bs-dropdown-link-active-color: #ea86a8;
+  --bs-dropdown-link-active-color: #7f5ceb;
   --bs-dropdown-link-active-bg: none;
   --bs-dropdown-link-disabled-color: #adb5bd;
   --bs-dropdown-header-color: #adb5bd;
@@ -12574,7 +12585,7 @@ textarea.form-control-lg {
 .btn-mobile-navbar {
   width: 50px;
   height: 50px;
-  box-shadow: inset 0px 0px 0px 1px #ea86a8;
+  box-shadow: inset 0px 0px 0px 1px #7f5ceb;
   border-radius: 10px;
   display: inline-flex;
   align-items: center;
@@ -12590,7 +12601,7 @@ textarea.form-control-lg {
 }
 .btn-mobile-navbar.show {
   color: #9B9B9B;
-  box-shadow: inset 0px 0px 0px 1px #ea86a8;
+  box-shadow: inset 0px 0px 0px 1px #7f5ceb;
   z-index: 1055 !important;
 }
 

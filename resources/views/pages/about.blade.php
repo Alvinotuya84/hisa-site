@@ -7,8 +7,8 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 col-lg-9 text-center">
-                    <h1>Putting our clients first <span class="text-highlight">since 1986</span></h1>
-                    <p class="lead text-muted">For more than 30 years, we’ve been empowering clients by helping them take control of their financial lives.</p>
+                    <h1>Putting our clients first <span class="text-highlight">since 2020</span></h1>
+                    <p class="lead text-muted">For more than 3 years, we’ve been empowering clients by helping them take control of their financial lives.</p>
                 </div>
                 <div class="col-12 mt-3">
                     <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 gy-2 gy-md-2 gx-0 gx-md-2 gx-lg-4">

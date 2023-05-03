@@ -54,37 +54,38 @@
 
     <header class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="https://www.hisa.co/img/logo.png" alt="logo" width="110" height="40" class="d-inline-block">
+            
+            <a class="navbar-brand" href="{{route('home')}}">
+                <img src="https://www.hisa.co/img/logo.png" alt="logo" width="110" height="40" >
             </a>
-            <div class="collapse navbar-collapse d-flex justify-content-between d-none d-xl-block" id="navbarNav">
+            <div class="collapse navbar-collapse d-flex justify-content-center d-none d-xl-block" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item ">
                         <a class="nav-link" href="/"   aria-expanded="false">Home</a>
 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/markets">Markets</a>
+                        <a @if (Route::currentRouteName() == 'markets') class="nav-link active" @else class="nav-link"  @endif href="/markets" aria-expanded="false">Markets</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="" id="dropdownCompany" data-bs-toggle="dropdown" aria-expanded="false">Company</a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="{{route('about')}}">About</a>
+                                <a @if (Route::currentRouteName() == 'about') class="dropdown-item active" @else class="dropdown-item"  @endif  href="{{route('about')}}">About</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="blog.html">Blog</a>
+                                <a @if (Route::currentRouteName() == 'blog') class="dropdown-item active" @else class="dropdown-item"  @endif href="{{route('blog')}}">Blog</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="careers.html">Careers</a>
+                                <a @if (Route::currentRouteName() == 'careers') class="dropdown-item active" @else class="dropdown-item"  @endif href="{{route('careers')}}">Careers</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="contact.html">Contact</a>
+                                <a @if (Route::currentRouteName() == 'contact') class="dropdown-item active" @else class="dropdown-item"  @endif  href="{{route('contact')}}">Contact</a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="education.html">Education</a>
+                        <a @if (Route::currentRouteName() == 'education') class="nav-link active" @else class="nav-link"  @endif  href="{{route('education')}}">Education</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="" id="dropdownResources" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
@@ -108,10 +109,12 @@
                     </li>
                 </ul>
                 <div class="optional-link d-flex align-items-center ms-4 d-none d-xl-block">
-                    {{-- <a href="{{ route('login') }}" class="btn btn-link link-secondary text-decoration-none">Sign in</a> --}}
-                    <a href="{{ route('login') }}" class="btn btn-primary">Download</a>
+                    <a href="{{route('login')}}" class="btn btn-link link-secondary text-decoration-none">Sign in</a>
+                    <a href="#" class="btn btn-outline-primary rounded-pill">Get started<i class="fas fa-arrow-right fa-sm ms-1"></i></a>
                 </div>
             </div>
+            
+            
         </div>
     </header>
 {{-- <nav class="navbar navbar-dark navbar-expand-md bg-dark py-3">

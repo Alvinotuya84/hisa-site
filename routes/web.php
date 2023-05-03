@@ -29,8 +29,10 @@ Route::get('/', [HomeController::class, 'index'])
 
 Route::get('/categories', [HomeController::class, 'showCategories'])
     ->name('show-categories');
-Route::get('/markets',[PagesController::class,'markets']);    
-Route::get('/careers',[PagesController::class,'careers']);    
+Route::get('/markets',[PagesController::class,'markets'])->name('markets');    
+Route::get('/careers',[PagesController::class,'careers'])->name('careers');    
+Route::get('/education',[PagesController::class,'education'])->name('education');
+Route::get('/blog',[PagesController::class,'blog'])->name('blog');
 
 
 Route::get('/about', function () {

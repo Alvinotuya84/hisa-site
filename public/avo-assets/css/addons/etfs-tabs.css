@@ -60,3 +60,9 @@
 .py-4 > p {
     margin: 0;
 }
+.tab-button{
+    padding: 1%;
+}
+.border-1 {
+    border-width:2px !important;
+}

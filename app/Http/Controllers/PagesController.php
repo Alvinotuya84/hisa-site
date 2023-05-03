@@ -15,4 +15,10 @@ class PagesController extends Controller
     public function careers(){
         return view('pages.careers');
     }
+    public function education(){
+        return view('pages.education');
+    }
+    public function blog(){
+        return view('pages.blog');
+    }
 }
