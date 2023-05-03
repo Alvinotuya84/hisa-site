@@ -112,7 +112,7 @@
             <div class="col">
                 <h5 class="text-black">Get in Touch</h5>
                 <p>Contact us any time for getting support.</p>
-                <a class="footer-email" href="mailto:hello@avo-invest.id">hello@avo-invest.id</a>
+                <a class="footer-email" href="mailto:hello@hisa.co">hello@hisa.co</a>
                 <!-- social media begin -->
                 <div class="social-media-list small hstack">
                 <div><a href="https://www.facebook.com/indonez" class="color-facebook text-decoration-none"><i class="fab fa-facebook-square"></i> Facebook</a></div>

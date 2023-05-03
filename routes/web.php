@@ -5,8 +5,10 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\GeneralSettingController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
+
 use App\Models\GeneralSetting;
 use Artesaos\SEOTools\Facades\SEOTools;
 use Illuminate\Support\Facades\Route;
@@ -27,6 +29,7 @@ Route::get('/', [HomeController::class, 'index'])
 
 Route::get('/categories', [HomeController::class, 'showCategories'])
     ->name('show-categories');
+Route::get('/markets',[PagesController::class,'markets']);    
 
 Route::get('/about', function () {
     // General Setting of the website

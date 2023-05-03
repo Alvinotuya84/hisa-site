@@ -184,6 +184,7 @@ return [
         RealRashid\SweetAlert\SweetAlertServiceProvider::class,
         \Conner\Tagging\Providers\TaggingServiceProvider::class,
         Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
+        App\Providers\ViewComposerServiceProvider::class,
 
         /*
          * Package Service Providers...

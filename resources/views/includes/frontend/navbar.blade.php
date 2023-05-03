@@ -64,7 +64,7 @@
 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="markets.html">Markets</a>
+                        <a class="nav-link" href="/markets">Markets</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="" id="dropdownCompany" data-bs-toggle="dropdown" aria-expanded="false">Company</a>

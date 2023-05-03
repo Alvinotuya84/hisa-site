@@ -1,106 +1,95 @@
 @extends('layouts.app') @section('content')
-<div class="uk-section uk-padding-remove-vertical in-equity-breadcrumb">
-    <div class="uk-container">
-        <div class="uk-grid">
-            <div class="uk-width-1-1">
-                <ul class="uk-breadcrumb">
-                    <li><a href="/">Home</a></li>
-                    <li><span>About</span></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
+
 <!-- breadcrumb content end -->
 <main>
     <!-- section content begin -->
-    <div class="uk-section">
-        <div class="uk-container">
-            <div class="uk-grid">
-                <div class="uk-width-1-1 uk-flex uk-flex-center">
-                    <div class="uk-width-3-5@m uk-text-center">
-                        <h1 class="uk-margin-remove">Putting our clients first <span class="in-highlight">since 1986</span></h1>
-                        <p class="uk-text-lead uk-text-muted uk-margin-small-top">For more than 30 years, we’ve been empowering clients by helping them take control of their financial lives.</p>
-                    </div>
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-9 text-center">
+                    <h1>Putting our clients first <span class="text-highlight">since 1986</span></h1>
+                    <p class="lead text-muted">For more than 30 years, we’ve been empowering clients by helping them take control of their financial lives.</p>
                 </div>
-                <div class="uk-grid uk-grid-large uk-child-width-1-3@m uk-margin-medium-top" data-uk-grid>
-                    <div class="uk-flex uk-flex-left">
-                        <div class="uk-margin-right">
-                            <i class="fas fa-leaf fa-lg in-icon-wrap primary-color"></i>
+                <div class="col-12 mt-3">
+                    <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 gy-2 gy-md-2 gx-0 gx-md-2 gx-lg-4">
+                        <div class="col d-flex align-items-start">
+                            <div class="icon-wrap bg-primary rounded-circle flex-shrink-0 me-2">
+                                <i class="fas fa-leaf fa-lg text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="h4">Philosophy</h3>
+                                <p class="mb-0">At vero eos etme accusamus iusto odio ent dignissimos deleniti atque corrupti quos ducimus moll quilla blanditiis expedita.</p>
+                            </div>
                         </div>
-                        <div>
-                            <h3>Philosophy</h3>
-                            <p>At vero eos etme accusamus iusto odio ent dignissimos deleniti atque corrupti quos ducimus moll quilla blanditiis expedita est distinctio.</p>
+                        <div class="col d-flex align-items-start">
+                            <div class="icon-wrap bg-primary rounded-circle flex-shrink-0 me-2">
+                                <i class="fas fa-hourglass-end fa-lg text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="h4">History</h3>
+                                <p class="mb-0">At vero eos etme accusamus iusto odio ent dignissimos deleniti atque corrupti quos ducimus moll quilla blanditiis expedita.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="uk-flex uk-flex-left">
-                        <div class="uk-margin-right">
-                            <i class="fas fa-hourglass-end fa-lg in-icon-wrap primary-color"></i>
-                        </div>
-                        <div>
-                            <h3>History</h3>
-                            <p>At vero eos etme accusamus iusto odio ent dignissimos deleniti atque corrupti quos ducimus moll quilla blanditiis expedita est distinctio.</p>
-                        </div>
-                    </div>
-                    <div class="uk-flex uk-flex-left">
-                        <div class="uk-margin-right">
-                            <i class="fas fa-flag fa-lg in-icon-wrap primary-color"></i>
-                        </div>
-                        <div>
-                            <h3>Culture</h3>
-                            <p>At vero eos etme accusamus iusto odio ent dignissimos deleniti atque corrupti quos ducimus moll quilla blanditiis expedita est distinctio.</p>
+                        <div class="col d-flex align-items-start">
+                            <div class="icon-wrap bg-primary rounded-circle flex-shrink-0 me-2">
+                                <i class="fas fa-flag fa-lg text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="h4">Culture</h3>
+                                <p class="mb-0">At vero eos etme accusamus iusto odio ent dignissimos deleniti atque corrupti quos ducimus moll quilla blanditiis expedita.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- section content end -->
     <!-- section content begin -->
-    <div class="uk-section uk-padding-remove-vertical uk-margin-medium-bottom">
-        <div class="uk-container">
-            <div class="uk-grid">
-                <div class="uk-width-1-1">
-                    <div class="uk-card uk-card-default uk-border-rounded uk-background-center uk-background-contain uk-background-image@m" style="background-image: url(img/blockit/in-team-background-1.png);" data-uk-parallax="bgy: -100">
-                        <div class="uk-card-body">
-                            <div class="uk-grid uk-flex uk-flex-center">
-                                <div class="uk-width-3-4@m uk-text-center">
-                                    <h2>Our Leaders</h2>
+    <section class="pt-2 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card" style="background-image: url(asset('avo-assets/img/blockit/in-team-background-1.png')); background-repeat: no-repeat;">
+                        <div class="card-body py-4">
+                            <div class="row justify-content-center text-center mb-1">
+                                <div class="col-md-10 col-lg-8">
+                                    <h2 class="fw-bold">Our Leaders</h2>
                                     <p>We are a group of passionate, independent thinkers who never stop exploring new ways to improve trading for the self-directed investor.</p>
                                 </div>
                             </div>
-                            <div class="uk-child-width-1-3@m uk-text-center uk-margin-small-bottom" data-uk-grid>
-                                <div>
-                                    <img src="img/blockit/in-team-1.png" alt="image-team" width="200" height="200">
-                                    <h4 class="uk-margin-small-top uk-margin-remove-bottom">Cynthia Dixon</h4>
-                                    <span class="uk-label uk-margin-small-top uk-margin-small-bottom in-label-small">Chief Executive Officer</span>
+                            <div class="row row-cols-md-1 row-cols-lg-3 text-center gy-2 gy-md-3 gx-0 gx-md-3 gx-lg-5 mb-3">
+                                <div class="col">
+                                    <img class="mb-1" src="{{asset('assets/img/Eunice-Thairu.jpeg')}}" alt="image-team" width="200" height="200">
+                                    <h5 class="fw-bold mb-1">Eunice Nyawira Thairu</h5>
+                                    <span class="badge bg-primary mb-2">Chief Executive Officer</span>
                                     <p>Omnis voluptas assumenda est dolor repellendus autem debit officiis</p>
                                     <div>
-                                        <a class="uk-link-muted" href="#"><i class="fab fa-facebook-f uk-margin-small-right"></i></a>
-                                        <a class="uk-link-muted" href="#"><i class="fab fa-twitter uk-margin-small-right"></i></a>
-                                        <a class="uk-link-muted" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="color-facebook me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a class="color-twitter me-2" href="#"><i class="fab fa-twitter"></i></a>
+                                        <a class="color-linkedin" href="#"><i class="fab fa-linkedin-in"></i></a>
                                     </div>
                                 </div>
-                                <div>
-                                    <img src="img/blockit/in-team-4.png" alt="image-team" width="200" height="200">
-                                    <h4 class="uk-margin-small-top uk-margin-remove-bottom">Bryan Greene</h4>
-                                    <span class="uk-label uk-margin-small-top uk-margin-small-bottom in-label-small">Human Resources</span>
-                                    <p>Omnis voluptas assumenda omnis dolor repellendus</p>
+                                <div class="col">
+                                    <img class="mb-1" src="{{asset('assets/img/Eric-Asuma.jpeg')}}" alt="image-team" width="200" height="200">
+                                    <h5 class="fw-bold mb-1">Eric Asuma</h5>
+                                    <span class="badge bg-primary mb-2">Human Resources</span>
+                                    <p>Omnis voluptas assumenda est dolor repellendus autem debit officiis</p>
                                     <div>
-                                        <a class="uk-link-muted" href="#"><i class="fab fa-facebook-f uk-margin-small-right"></i></a>
-                                        <a class="uk-link-muted" href="#"><i class="fab fa-twitter uk-margin-small-right"></i></a>
-                                        <a class="uk-link-muted" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="color-behance me-2" href="#"><i class="fab fa-behance"></i></a>
+                                        <a class="color-twitter me-2" href="#"><i class="fab fa-twitter"></i></a>
+                                        <a class="color-facebook" href="#"><i class="fab fa-facebook-f"></i></a>
                                     </div>
                                 </div>
-                                <div>
-                                    <img src="img/blockit/in-team-2.png" alt="image-team" width="200" height="200">
-                                    <h4 class="uk-margin-small-top uk-margin-remove-bottom">Arthur Parker</h4>
-                                    <span class="uk-label uk-margin-small-top uk-margin-small-bottom in-label-small">Executive Assistant</span>
-                                    <p>Omnis voluptas assumenda omnis dolor repellendus</p>
+                                <div class="col">
+                                    <img class="mb-1" src="{{asset('assets/img/Eric-Jackson.jpeg')}}" alt="image-team" width="200" height="200">
+                                    <h5 class="fw-bold mb-1">Eric Jackson</h5>
+                                    <span class="badge bg-primary mb-2">Executive Assistant</span>
+                                    <p>Omnis voluptas assumenda est dolor repellendus autem debit officiis</p>
                                     <div>
-                                        <a class="uk-link-muted" href="#"><i class="fab fa-facebook-f uk-margin-small-right"></i></a>
-                                        <a class="uk-link-muted" href="#"><i class="fab fa-twitter uk-margin-small-right"></i></a>
-                                        <a class="uk-link-muted" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="color-dribbble me-2" href="#"><i class="fab fa-dribbble"></i></a>
+                                        <a class="color-twitter me-2" href="#"><i class="fab fa-twitter"></i></a>
+                                        <a class="color-pinterest" href="#"><i class="fab fa-pinterest"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -109,42 +98,40 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- section content end -->
     <!-- section content begin -->
-    <div class="uk-section in-counter-2">
-        <div class="uk-container">
-            <div class="uk-grid uk-flex uk-flex-center">
-                <div class="uk-width-3-4@m">
-                    <div class="uk-grid uk-flex uk-flex-middle" data-uk-grid>
-                        <div class="uk-width-1-2@m">
-                            <h4 class="uk-text-muted">Number speaks</h4>
-                            <h1 class="uk-margin-medium-bottom">We always ready<br>for a challenge.</h1>
-                            <a href="#" class="uk-button uk-button-primary uk-border-rounded">Learn more<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-9">
+                    <div class="row row-cols-1 row-cols-lg-2 align-items-center gy-3">
+                        <div class="col text-md-center text-lg-start">
+                            <h4 class="text-secondary mb-1">Number speaks</h4>
+                            <h1>We always ready<br>for a challenge.</h1>
+                            <a href="#" class="btn btn-primary rounded-pill mt-2">Learn more<i class="fas fa-arrow-right fa-sm ms-1"></i></a>
                         </div>
-                        <div class="uk-width-1-2@m">
-                            <div class="uk-margin-large" data-uk-grid>
-                                <div class="uk-width-1-3@m">
-                                    <h1 class="uk-text-primary uk-text-right@m">
+                        <div class="col">
+                            <div class="row align-items-start gx-0 mb-2 mb-md-4">
+                                <div class="col-12 col-md-4 text-md-end border-bottom border-primary">
+                                    <h1 class="text-primary">
                                         <span class="count" data-counter-end="410">0</span>
                                     </h1>
-                                    <hr class="uk-divider-small uk-text-right@m">
                                 </div>
-                                <div class="uk-width-expand@m">
-                                    <h3>Trading instruments</h3>
-                                    <p>Reprehenderit qui in svoluptate velit esse quam molestiae vel illum qui dolorem eum fugiat quo.</p>
+                                <div class="col-12 col-md-8 mt-2 mt-md-0 ps-md-4">
+                                    <h5>Trading instruments</h5>
+                                    <p>Reprehenderit qui in svoluptate velit esse quam molestiae vel illum qui dolorem eum fugiat.</p>
                                 </div>
                             </div>
-                            <div class="uk-margin-large" data-uk-grid>
-                                <div class="uk-width-1-3@m">
-                                    <h1 class="uk-text-primary uk-text-right@m">
+                            <div class="row align-items-start gx-0">
+                                <div class="col-12 col-md-4 text-md-end border-bottom border-primary">
+                                    <h1 class="text-primary">
                                         <span class="count" data-counter-end="27">0</span>
                                     </h1>
-                                    <hr class="uk-divider-small uk-text-right@m">
                                 </div>
-                                <div class="uk-width-expand@m">
-                                    <h3>Countries covered</h3>
-                                    <p>At vero eos et accusamus iusto dignissimos ducimus qui blanditiis praesentium voluta deleniti.</p>
+                                <div class="col-12 col-md-8 mt-2 mt-md-0 ps-md-4">
+                                    <h5>Countries covered</h5>
+                                    <p>At vero eos et accusamus iusto dignissimos ducimus qui blanditiis praesentium voluta.</p>
                                 </div>
                             </div>
                         </div>
@@ -152,7 +139,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- section content end -->
-</main>
+    </main>
 @endsection
