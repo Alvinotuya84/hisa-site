@@ -1,4 +1,3 @@
-<div>
     <div class="position-relative">
         <div class="card bg-primary rounded-5" id="tab-panel-data">
             <div class="card-body">
@@ -7,7 +6,7 @@
                     <img src="{{$tabsData[$activeTabIndex]['country_flag']}}" height="36" width="36">
                 </div>
               </div>
-            <img class="card-img rounded-0 rounded-bottom" height="250" width="200" src="{{asset($tabsData[$activeTabIndex]['gif'])}}" >
+            <img class="img-fluid rounded-0 rounded-bottom" style="max-height: 250px;" src="{{asset($tabsData[$activeTabIndex]['gif'])}}" >
 
         </div>
         <div id="tabs" class="d-flex gap-3 border-bottom tabs-content">
@@ -23,7 +22,7 @@
         class=" border-bottom-2 border-secondary"
     ></div>
     </div>
-</div>
+
 @push('addon-script')
 <script src="{{asset('avo-assets/js/addons/etf-tabs.js')}}">
 
