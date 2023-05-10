@@ -3,11 +3,19 @@
 namespace App\Http\Controllers;
 
 use App\Models\GeneralSetting;
+use App\Models\Page;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class PagesController extends Controller
 {
     //
+
+    public function allPages(){
+        $pages= Page::all();
+        $user=Auth::user();
+        return view('pages.admin.pages',compact('pages','user'));
+    }
     public function markets(){
 
         return view('pages.markets');

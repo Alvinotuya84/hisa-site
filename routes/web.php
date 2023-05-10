@@ -5,6 +5,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\GeneralSettingController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
@@ -79,13 +80,16 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('/pages',[PagesController::class,'allPages'])->name('pages');
 
     Route::get('posts/checkSlug', [PostController::class, 'checkSlug'])
         ->name('checkSlug');
     Route::get('posts/authorpost/{id}', [PostController::class, 'authorPost'])
         ->name('authorPost');
     Route::resource('posts', PostController::class);
-
+    Route::prefix('pages')->group(function () {
+        Route::resource('home',HomePageController::class);
+    });
     Route::resource('admin-categories', CategoryController::class);
 
     Route::get('categories/checkCategorySlug', [CategoryController::class, 'checkCategorySlug'])

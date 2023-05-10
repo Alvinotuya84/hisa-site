@@ -776,7 +776,7 @@
     <!-- section content begin -->
 
     
-    <section class="pb-5 in-avo-4">
+    {{-- <section class="pb-5 in-avo-4">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12 col-lg-9 position-relative">
@@ -815,7 +815,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- section content end -->
     <!-- section content begin -->
     <section class="py-5 in-avo-5 bg-white">
@@ -840,7 +840,7 @@
             </div>
         </div>
         
-        <div class="row bg-white">
+        {{-- <div class="row bg-white">
 
             <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
                 <h2 class="display-4">
@@ -859,18 +859,49 @@
             <div class="col-md-6">
                 <img src="{{asset('assets/img/home-ard-hisa-1.png')}}" class="img-fluid w-100 h-100" alt="">
             </div>
-        </div>
+        </div> --}}
 
     </section>
+
+
+    <div class="uk-section uk-section-primary uk-preserve-color in-equity-14 uk-background-contain uk-background-top-center" data-src="{{asset('alt-assets/img/in-equity-14-bg.svg')}}" data-uk-img>
+        <div class="uk-container uk-margin-small-bottom">
+            <div class="uk-child-width-1-2@m uk-flex uk-flex-middle" data-uk-grid>
+                <div>
+                    <div class="uk-flex uk-flex-left uk-flex-middle">
+                        <div class="uk-margin-right in-award-logo">
+                            <img src="img/in-lazy.gif" data-src="{{asset('alt-assets/img/in-equity-5-award-3.svg')}}" alt="award" width="128" data-height data-uk-img>
+                        </div>
+                        <div class="in-award-badge">
+                            <h3 class="uk-margin-remove">Traders #1 Choice</h3>
+                            <h4 class="uk-margin-remove-top uk-margin-small-bottom uk-text-uppercase in-heading-thin">True ECN Account</h4>
+                            <p class="uk-text-small uk-margin-remove uk-visible@m">Voted by industry professionals</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-flex uk-flex-right uk-flex-middle right-content">
+                    <ul class="uk-list in-list-check uk-margin-remove-bottom uk-margin-right">
+                        <li>Zero Commissions</li>
+                        <li>Zero Deposit Fees</li>
+                    </ul>
+                    <span class="uk-margin-large-left">
+                        <a href="#" class="uk-button uk-button-secondary uk-button-large uk-border-rounded">Open your account<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <section class="pt-1 pb-5 pt-md-2 pb-md-5 py-lg-5 in-avo-3">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-lg-5 position-relative">
                     <img class="img-decor" src="{{asset('avo-assets/img/in-avo-3-decor-1.svg')}}" alt="decor">
-                    <div class="card card-body card-tv">
+                    {{-- <div class="card card-body card-tv">
                         <div id="tradingview-widget"></div>
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="col-md-12 col-lg-7">
                     <h2>Find the products that <span class="text-highlight">match your needs</span> and desired risk level.</h2>
@@ -1063,7 +1094,7 @@
     </section>
     <!-- section content end -->
     <!-- section content begin -->
-    <section class="py-5 in-avo-18 bg-white">
+    {{-- <section class="py-5 in-avo-18 bg-white">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12 col-lg-12 text-center">
@@ -1092,7 +1123,42 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
+
+    <div class="uk-section uk-padding-remove-vertical in-equity-10">
+        <div class="uk-container">
+            <div class="uk-grid" data-uk-grid>
+                <div class="uk-width-1-1">
+                    <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
+                        <div class="uk-grid-divider" data-uk-grid>
+                            <div class="uk-width-auto@m uk-flex uk-flex-middle uk-flex-center@s">
+                                <h4>We are in the press</h4>
+                            </div>
+                            <div class="uk-width-expand@m">
+                                <div class="uk-grid-medium uk-child-width-1-5@m uk-child-width-1-2@s uk-text-center in-client-logo-3" data-uk-grid>
+                                    <div class="uk-tile uk-tile-default">
+                                        <img class="uk-margin-remove" src="{{asset('alt-assets/img/in-equity-press-1.svg')}}" alt="equity-press" width="170" height="68">
+                                    </div>
+                                    <div class="uk-tile uk-tile-default">
+                                        <img class="uk-margin-remove" src="{{asset('alt-assets/img/in-equity-press-2.svg')}}" alt="equity-press" width="170" height="68">
+                                    </div>
+                                    <div class="uk-tile uk-tile-default">
+                                        <img class="uk-margin-remove" src="{{asset('alt-assets/img/in-equity-press-3.svg')}}" alt="equity-press" width="170" height="68">
+                                    </div>
+                                    <div class="uk-tile uk-tile-default">
+                                        <img class="uk-margin-remove" src="{{asset('alt-assets/img/in-equity-press-4.svg')}}" alt="equity-press" width="170" height="68">
+                                    </div>
+                                    <div class="uk-tile uk-tile-default uk-visible@m">
+                                        <img class="uk-margin-remove" src="{{asset('alt-assets/img/in-equity-press-5.svg')}}" alt="equity-press" width="170" height="68">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </main>
 @endsection
 @push('addon-style')

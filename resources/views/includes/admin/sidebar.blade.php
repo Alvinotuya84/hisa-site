@@ -54,8 +54,8 @@
 
         <!-- Posts -->
         <li
-            class="menu-item {{ request()->is('posts') ? 'active' : '' }} {{ request()->is('posts/*/*') ? 'active' : '' }}">
-            <a href="{{ route('posts.index') }}" class="menu-link">
+            class="menu-item {{ request()->is('pages') ? 'active' : '' }} {{ request()->is('pages/*/*') ? 'active' : '' }}">
+            <a href="{{ route('pages') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-collection"></i>
                 <div data-i18n="Basic">Pages</div>
             </a>

@@ -19,57 +19,40 @@ class PageSeeder extends Seeder
         DB::table('pages')->insert([
             [
                 'title'=>'Home',
-                'slug'=>'/home',
-                'content'=>json_encode(
-                    [
-                        'welcome_insights'=>[
-                            'title'=>"The word's most powerful app",
-                            'description'=>'Bring your trading ventures go around the world, way beyond the space of your trading account.',
-                            'title'=>"The word's most powerful app",
-                            'description'=>'Bring your trading ventures go around the world, way beyond the space of your trading account.',
-                        ],
-                        'investment_steps'=>[
-    ['description'=>"Choose an account tier and submit your application"],
-    ['description'=>"Choose an account tier and submit your application"],
-    ['description'=>"Choose an account tier and submit your application"],
-                        ],
-                        'download_text'=>"Trade with Hisa app and trade directly with leading platform"
+                'end_point'=>'/home',
 
-                    ]
-                )
-                    ],
-                    [
-                        'title'=>'About',
-                        'slug'=>'/about',
-                        'content'=>json_encode([
-                            'title'=>"Putting our clients first since 1986",
-                            'title_description'=>"For more than 30 years, we’ve been empowering clients by helping them take control of their financial lives.",
-                            'purposes'=>[
-                                [
-                                    'title'=>"Our goal",
-                                    'icon'=>"fa-hourglass-end",
-                                    "description"=>"Empowering Africa to be financially independent by providing simplified investment solutions and educational content"
+            ],
+            [
+                'title'=>'Markets',
+                'end_point'=>'/markets',
 
-                                ]
-                                ],
-                            'team'=>[
-                                "team_title"=>"Putting our clients first since 2020",
-                                "team_description"=>"Serving more than 5 years, we’ve been empowering clients by helping them take control of their finances",
-                                "leaders"=>[
-                                    [
-                                    'name'=>"Eric Jackson",
-                                    "image"=>"/eric-jackson.png",
-                                ]   ,
+            ],
+            [
+                'title'=>'About',
+                'end_point'=>'/about',
 
+            ],
+            [
+                'title'=>'Blog',
+                'end_point'=>'/blog',
 
-                                    ],
-                                    'total_users'=>"",
-                                    "co"
+            ],
+            [
+                'title'=>'careers',
+                'end_point'=>'/careers',
 
-                            ]
+            ],
+            [
+                'title'=>'Education',
+                'end_point'=>'/education',
 
-                        ])
-                    ]
+            ],
+            [
+                'title'=>'Contact',
+                'end_point'=>'/contact',
+
+            ],
+
         ]);
 
     }
