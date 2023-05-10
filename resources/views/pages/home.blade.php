@@ -526,7 +526,20 @@
     <!-- section content end -->
     <!-- section content begin -->
 
-
+    {{-- <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card shadow-sm border-primary">
+                        <div class="card-body d-lg-flex justify-content-between align-items-center p-4">
+                            <h4 class="fw-bold mb-0">Get up to KSH 600 plus 60 days of <span class="text-highlight">commission-free</span> stocks & forex trades</h4>
+                            <a class="btn btn-primary rounded-pill mt-2 mt-lg-0" href="#">Open an Account<i class="fas fa-arrow-right fa-sm ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> --}}
 
     <div class="uk-section in-equity-9">
         <div class="uk-container uk-margin-medium-top uk-margin-bottom">
