@@ -64,9 +64,7 @@
                         <a class="nav-link" href="/"   aria-expanded="false">Home</a>
 
                     </li>
-                    <li class="nav-item">
-                        <a @if (Route::currentRouteName() == 'markets') class="nav-link active" @else class="nav-link"  @endif href="/markets" aria-expanded="false">Markets</a>
-                    </li>
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="" id="dropdownCompany" data-bs-toggle="dropdown" aria-expanded="false">Company</a>
                         <ul class="dropdown-menu">
@@ -85,7 +83,23 @@
                         </ul>
                     </li>
                     <li class="nav-item">
+                        <a @if (Route::currentRouteName() == 'markets') class="nav-link active" @else class="nav-link"  @endif href="/markets" aria-expanded="false">Markets</a>
+                    </li>
+                    <li class="nav-item">
                         <a @if (Route::currentRouteName() == 'education') class="nav-link active" @else class="nav-link"  @endif  href="{{route('education')}}">Education</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle">Hisa For</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">Banks</li>
+                            <li class="dropdown-item">Telcos</li>
+                            <li class="dropdown-item">Investment Banks</li>
+                            <li class="dropdown-item">Saccos</li>
+                            <li class="dropdown-item">Fund Managers</li>
+
+
+
+                        </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="" id="dropdownResources" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
@@ -109,8 +123,8 @@
                     </li>
                 </ul>
                 <div class="optional-link d-flex align-items-center ms-4 d-none d-xl-block">
-                    <a href="{{route('login')}}" class="btn btn-link link-secondary text-decoration-none">Sign in</a>
-                    <a href="#" class="btn btn-outline-primary rounded-pill">Get started<i class="fas fa-arrow-right fa-sm ms-1"></i></a>
+                    {{-- <a href="{{route('login')}}" class="btn btn-link link-secondary text-decoration-none">Sign in</a> --}}
+                    <a href="#" class="btn btn-outline-primary rounded-pill">Sign In<i class="fas fa-arrow-right fa-sm ms-1"></i></a>
                 </div>
             </div>
             

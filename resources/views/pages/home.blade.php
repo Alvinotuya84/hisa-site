@@ -120,7 +120,7 @@
 
         
         
-                <div class="row">
+                <div class="row g-0 align-items-md-center">
                     <div class="col-md-6 d-flex flex-column" >
                         <h1 class="text-black display-4">Borderless </h1>
                         <h1 class="text-black display-4">Investments </h1>
@@ -157,10 +157,45 @@
                             </a> --}}
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    {{-- <div class="col-md-6">
                         <!-- Tabs nav -->
 
                         <livewire:home-etf-tabs /> 
+                    </div> --}}
+                    <div class="col-md-6 col-lg-6 order-last position-relative">
+                        <img src="{{asset('avo-assets/img/in-slide-img-1.svg')}}" class="image-slide" alt="image-slide">
+                        <div class="card position-absolute symbol-slide animate-1 p-responsive-1" style="top: -70px; left: -50px;">
+                            <div>
+                                <img src="{{asset('avo-assets/img/in-slide-symbol-1.svg')}}" alt="icon" width="30" height="30">
+                                <div>
+                                    <span class="h6">42%<i class="fas fa-arrow-trend-up fa-sm"></i></span><br>profit gain
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card position-absolute symbol-slide animate-2 p-responsive-2" style="top: -230px; left: 150px;">
+                            <div>
+                                <img src="{{asset('avo-assets/img/in-slide-symbol-2.svg')}}" alt="icon" width="30" height="30">
+                                <div>
+                                    <span class="h6">22%<i class="fas fa-arrow-trend-up fa-sm"></i></span><br>profit gain
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card position-absolute symbol-slide animate-3 p-responsive-3" style="top: -210px; left: 430px;">
+                            <div>
+                                <img src="{{asset('avo-assets/img/in-slide-symbol-3.svg')}}" alt="icon" width="30" height="30">
+                                <div>
+                                    <span class="h6">10%<i class="fas fa-arrow-trend-down fa-sm"></i></span><br>floating loss
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card position-absolute symbol-slide animate-4 p-responsive-4" style="top: -45px; left: 605px;">
+                            <div>
+                                <img src="{{asset('avo-assets/img/in-slide-symbol-4.svg')}}" alt="icon" width="30" height="30">
+                                <div>
+                                    <span class="h6">32%<i class="fas fa-arrow-trend-up fa-sm"></i></span><br>profit gain
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -171,26 +206,234 @@
     <section class="pt-1 pb-5 pt-md-2 pb-md-5 py-lg-5 in-avo-3">
 
         <div class="col-md-12 d-flex flex-column align-items-center">
-            <h1 class="display-3 text-black">Pick any asset you like from a wide</h1>
-            <h1 class="display-3 text-black">Range of <span class="text-primary" >US</span> and <span class="text-primary" >Kenyan Stocks</span> </h1>
-            <h1 class="text-warning display-3">ETFs</h1>
+            {{-- <h1 class="display-3 text-black">Pick any asset you like from a wide</h1> --}}
+            <h1 class="display-4 text-black">A wide range of  <span class="text-primary" > Stocks</span>  and {{' '}}<span class="text-warning">ETFs</span></h1>
         </div>
         <div class="container etfs ">
-                <div class="row etfs-content flex-nowrap">
+                <div class="row etfs-content">
                     {{-- <div class="col-md-12 col-lg-5 position-relative">
                         <img class="img-decor" src="{{asset('avo-assets/img/in-avo-3-decor-1.svg')}}" alt="decor">
                         <div class="card card-body card-tv">
                             <div id="tradingview-widget"></div>
                         </div>
                     </div> --}}
-                    <div class="col-md-12 col-lg-4 text-nowrap">
+
+
+                    <div class="row flex-nowrap">
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center">
+                                    <img  src="{{ asset('assets/img/equity.png')}}"/>                             </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center">
+                                    <img  src="{{ asset('assets/img/equity.png')}}"/>                             </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center">
+                                    <img  src="{{ asset('assets/img/equity.png')}}"/>                             </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center">
+                                    <img  src="{{ asset('assets/img/equity.png')}}"/>                             </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center">
+                                    <img  src="{{ asset('assets/img/equity.png')}}"/>                             </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center">
+                                    <img  src="{{ asset('assets/img/equity.png')}}"/>                             </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center">
+                                    <img  src="{{ asset('assets/img/equity.png')}}"/>                             </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center">
+                                    <img  src="{{ asset('assets/img/equity.png')}}"/>                             </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="row flex-nowrap">
+
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center">
+                                    <img  src="{{ asset('assets/img/equity.png')}}"/>                             </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center">
+                                    <img  src="{{ asset('assets/img/equity.png')}}"/>                             </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center">
+                                    <img  src="{{ asset('assets/img/equity.png')}}"/>                             </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center">
+                                    <img  src="{{ asset('assets/img/equity.png')}}"/>                             </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center">
+                                    <img  src="{{ asset('assets/img/equity.png')}}"/>                             </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center">
+                                    <img  src="{{ asset('assets/img/equity.png')}}"/>                             </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center">
+                                    <img  src="{{ asset('assets/img/equity.png')}}"/>                             </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center">
+                                    <img  src="{{ asset('assets/img/equity.png')}}"/>                             </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row flex-nowrap">
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center">
+                                    <img  src="{{ asset('assets/img/equity.png')}}"/>                             </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center">
+                                    <img  src="{{ asset('assets/img/equity.png')}}"/>                             </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center">
+                                    <img  src="{{ asset('assets/img/equity.png')}}"/>                             </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center">
+                                    <img  src="{{ asset('assets/img/equity.png')}}"/>                             </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center">
+                                    <img  src="{{ asset('assets/img/equity.png')}}"/>                             </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center">
+                                    <img  src="{{ asset('assets/img/equity.png')}}"/>                             </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center">
+                                    <img  src="{{ asset('assets/img/equity.png')}}"/>                             </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center">
+                                    <img  src="{{ asset('assets/img/equity.png')}}"/>                             </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    {{-- <div class="col-md-12 col-lg-4 text-nowrap">
                         <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-1 mt-2">
                             <div class="col">
                             </div>
                             <div class="col">
                                 <div class="card">
                                     <div class="card-body d-flex align-items-center justify-content-center">
-                                        <img height="50" width="50" src="{{ asset('assets/img/equity.png')}}"/>                             </div>
+                                        <img  src="{{ asset('assets/img/equity.png')}}"/>                             </div>
                                 </div>
                             </div>
                             <div class="col">
@@ -198,7 +441,7 @@
                             <div class="col">
                                 <div class="card">
                                     <div class="card-body d-flex align-items-center justify-content-center">
-                                        <img height="50" width="50" src="{{ asset('assets/img/equity.png')}}"/>                            </div>
+                                        <img  src="{{ asset('assets/img/equity.png')}}"/>                            </div>
                                 </div>
                             </div>
                             <div class="col">
@@ -206,7 +449,7 @@
                             <div class="col">
                                 <div class="card">
                                     <div class="card-body d-flex align-items-center justify-content-center">
-                                        <img height="50" width="50" src="{{ asset('assets/img/equity.png')}}"/>                            </div>
+                                        <img  src="{{ asset('assets/img/equity.png')}}"/>                            </div>
                                 </div>
                             </div>
                             <div class="col">
@@ -214,7 +457,7 @@
                             <div class="col">
                                 <div class="card">
                                     <div class="card-body d-flex align-items-center justify-content-center">
-                                        <img height="50" width="50" src="{{ asset('assets/img/equity.png')}}"/>                             </div>
+                                        <img  src="{{ asset('assets/img/equity.png')}}"/>                             </div>
                                 </div>
                             </div>
                             <div class="col">
@@ -229,7 +472,7 @@
                             <div class="col">
                                 <div class="card">
                                     <div class="card-body d-flex align-items-center justify-content-center">
-                                        <img height="50" width="50" src="{{ asset('assets/img/equity.png')}}"/>                            </div>
+                                        <img  src="{{ asset('assets/img/equity.png')}}"/>                            </div>
                                 </div>
                             </div>
                             <div class="col">
@@ -237,7 +480,7 @@
                             <div class="col">
                                 <div class="card">
                                     <div class="card-body d-flex align-items-center justify-content-center">
-                                        <img height="50" width="50" src="{{ asset('assets/img/equity.png')}}"/>
+                                        <img  src="{{ asset('assets/img/equity.png')}}"/>
                                     </div>
                                 </div>
                             </div>
@@ -246,7 +489,7 @@
                             <div class="col">
                                 <div class="card">
                                     <div class="card-body d-flex align-items-center justify-content-center">
-                                        <img height="50" width="50" src="{{ asset('assets/img/equity.png')}}"/>                                </div>
+                                        <img  src="{{ asset('assets/img/equity.png')}}"/>                                </div>
                                 </div>
                             </div>
                             <div class="col">
@@ -254,7 +497,7 @@
                             <div class="col">
                                 <div class="card">
                                     <div class="card-body d-flex align-items-center justify-content-center">
-                                        <img height="50" width="50" src="{{ asset('assets/img/equity.png')}}"/>                             </div>
+                                        <img  src="{{ asset('assets/img/equity.png')}}"/>                             </div>
                                 </div>
                             </div>
                             <div class="col">
@@ -269,7 +512,7 @@
                             <div class="col">
                                 <div class="card">
                                     <div class="card-body d-flex align-items-center justify-content-center">
-                                        <img height="50" width="50" src="{{ asset('assets/img/equity.png')}}"/>                            </div>
+                                        <img  src="{{ asset('assets/img/equity.png')}}"/>                            </div>
                                 </div>
                             </div>
                             <div class="col">
@@ -277,7 +520,7 @@
                             <div class="col">
                                 <div class="card">
                                     <div class="card-body d-flex align-items-center justify-content-center">
-                                        <img height="50" width="50" src="{{ asset('assets/img/equity.png')}}"/>                           </div>
+                                        <img  src="{{ asset('assets/img/equity.png')}}"/>                           </div>
                                 </div>
                             </div>
                             <div class="col">
@@ -285,7 +528,7 @@
                             <div class="col">
                                 <div class="card">
                                     <div class="card-body d-flex align-items-center justify-content-center">
-                                        <img height="50" width="50" src="{{ asset('assets/img/equity.png')}}"/>
+                                        <img  src="{{ asset('assets/img/equity.png')}}"/>
                                     </div>
                                 </div>
                             </div>
@@ -294,7 +537,7 @@
                             <div class="col">
                                 <div class="card">
                                     <div class="card-body d-flex align-items-center justify-content-center">
-                                        <img height="50" width="50" src="{{ asset('assets/img/equity.png')}}"/>
+                                        <img  src="{{ asset('assets/img/equity.png')}}"/>
                                     </div>
                                 </div>
                             </div>
@@ -310,7 +553,7 @@
                             <div class="col">
                                 <div class="card">
                                     <div class="card-body d-flex align-items-center justify-content-center">
-                                        <img height="50" width="50" src="{{ asset('assets/img/equity.png')}}"/>                            </div>
+                                        <img  src="{{ asset('assets/img/equity.png')}}"/>                            </div>
                                 </div>
                             </div>
                             <div class="col">
@@ -318,7 +561,7 @@
                             <div class="col">
                                 <div class="card">
                                     <div class="card-body d-flex align-items-center justify-content-center">
-                                        <img height="50" width="50" src="{{ asset('assets/img/equity.png')}}"/>                           </div>
+                                        <img  src="{{ asset('assets/img/equity.png')}}"/>                           </div>
                                 </div>
                             </div>
                             <div class="col">
@@ -326,7 +569,7 @@
                             <div class="col">
                                 <div class="card">
                                     <div class="card-body d-flex align-items-center justify-content-center">
-                                        <img height="50" width="50" src="{{ asset('assets/img/equity.png')}}"/>
+                                        <img  src="{{ asset('assets/img/equity.png')}}"/>
                                     </div>
                                 </div>
                             </div>
@@ -335,7 +578,7 @@
                             <div class="col">
                                 <div class="card">
                                     <div class="card-body d-flex align-items-center justify-content-center">
-                                        <img height="50" width="50" src="{{ asset('assets/img/equity.png')}}"/>
+                                        <img  src="{{ asset('assets/img/equity.png')}}"/>
                                     </div>
                                 </div>
                             </div>
@@ -351,7 +594,7 @@
                             <div class="col">
                                 <div class="card">
                                     <div class="card-body d-flex align-items-center justify-content-center">
-                                        <img height="50" width="50" src="{{ asset('assets/img/equity.png')}}"/>                            </div>
+                                        <img  src="{{ asset('assets/img/equity.png')}}"/>                            </div>
                                 </div>
                             </div>
                             <div class="col">
@@ -359,7 +602,7 @@
                             <div class="col">
                                 <div class="card">
                                     <div class="card-body d-flex align-items-center justify-content-center">
-                                        <img height="50" width="50" src="{{ asset('assets/img/equity.png')}}"/>                           </div>
+                                        <img  src="{{ asset('assets/img/equity.png')}}"/>                           </div>
                                 </div>
                             </div>
                             <div class="col">
@@ -367,7 +610,7 @@
                             <div class="col">
                                 <div class="card">
                                     <div class="card-body d-flex align-items-center justify-content-center">
-                                        <img height="50" width="50" src="{{ asset('assets/img/equity.png')}}"/>
+                                        <img  src="{{ asset('assets/img/equity.png')}}"/>
                                     </div>
                                 </div>
                             </div>
@@ -376,7 +619,7 @@
                             <div class="col">
                                 <div class="card">
                                     <div class="card-body d-flex align-items-center justify-content-center">
-                                        <img height="50" width="50" src="{{ asset('assets/img/equity.png')}}"/>
+                                        <img  src="{{ asset('assets/img/equity.png')}}"/>
                                     </div>
                                 </div>
                             </div>
@@ -392,7 +635,7 @@
                             <div class="col">
                                 <div class="card">
                                     <div class="card-body d-flex align-items-center justify-content-center">
-                                        <img height="50" width="50" src="{{ asset('assets/img/equity.png')}}"/>                            </div>
+                                        <img  src="{{ asset('assets/img/equity.png')}}"/>                            </div>
                                 </div>
                             </div>
                             <div class="col">
@@ -400,7 +643,7 @@
                             <div class="col">
                                 <div class="card">
                                     <div class="card-body d-flex align-items-center justify-content-center">
-                                        <img height="50" width="50" src="{{ asset('assets/img/equity.png')}}"/>                           </div>
+                                        <img  src="{{ asset('assets/img/equity.png')}}"/>                           </div>
                                 </div>
                             </div>
                             <div class="col">
@@ -408,7 +651,7 @@
                             <div class="col">
                                 <div class="card">
                                     <div class="card-body d-flex align-items-center justify-content-center">
-                                        <img height="50" width="50" src="{{ asset('assets/img/equity.png')}}"/>
+                                        <img  src="{{ asset('assets/img/equity.png')}}"/>
                                     </div>
                                 </div>
                             </div>
@@ -417,7 +660,7 @@
                             <div class="col">
                                 <div class="card">
                                     <div class="card-body d-flex align-items-center justify-content-center">
-                                        <img height="50" width="50" src="{{ asset('assets/img/equity.png')}}"/>
+                                        <img  src="{{ asset('assets/img/equity.png')}}"/>
                                     </div>
                                 </div>
                             </div>
@@ -425,7 +668,7 @@
                             </div>
                         </div>
                         
-                    </div>  
+                    </div>   --}}
                 </div>
             
         </div>
@@ -579,6 +822,246 @@
             </div>
         </div>
     </div>
+    <section class="py-5 in-avo-5 bg-white">
+        <div class="row bg-white">
+            <div class="col-md-6">
+                <img src="{{asset('assets/img/home-ard-hisa.png')}}" class="img-fluid w-100 h-100" alt="">
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                <h2 class="display-4">
+                  Free Transfers   
+                </h2>
+                <h2 class="display-4">
+                    & Low 
+                </h2>
+                <h2 class="display-4">
+                    Cross-border Rates
+                </h2>
+                <p>More money stays in your pocket, and more money arrives in theirs.
+
+
+                </p>
+            </div>
+        </div>
+        
+        {{-- <div class="row bg-white">
+
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                <h2 class="display-4">
+                    As Fast   
+                </h2>
+                <h2 class="display-4">
+                    & Easy 
+                </h2>
+                <h2 class="display-4">
+                    as Sending a Text
+                </h2>
+                <p>More money stays in your pocket, and more money arrives in theirs.
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <img src="{{asset('assets/img/home-ard-hisa-1.png')}}" class="img-fluid w-100 h-100" alt="">
+            </div>
+        </div> --}}
+
+    </section>
+
+    <div class="uk-section uk-section-primary uk-preserve-color in-equity-14 uk-background-contain uk-background-top-center" data-src="{{asset('alt-assets/img/in-equity-14-bg.svg')}}" data-uk-img>
+        <div class="uk-container uk-margin-small-bottom">
+            <div class="uk-child-width-1-2@m uk-flex uk-flex-middle" data-uk-grid>
+                <div>
+                    <div class="uk-flex uk-flex-left uk-flex-middle">
+                        <div class="uk-margin-right in-award-logo">
+                            <img src="img/in-lazy.gif" data-src="{{asset('alt-assets/img/in-equity-5-award-3.svg')}}" alt="award" width="128" data-height data-uk-img>
+                        </div>
+                        <div class="in-award-badge">
+                            <h3 class="uk-margin-remove">Traders #1 Choice</h3>
+                            <h4 class="uk-margin-remove-top uk-margin-small-bottom uk-text-uppercase in-heading-thin">True ECN Account</h4>
+                            <p class="uk-text-small uk-margin-remove uk-visible@m">Voted by industry professionals</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-flex uk-flex-right uk-flex-middle right-content">
+                    <ul class="uk-list in-list-check uk-margin-remove-bottom uk-margin-right">
+                        <li>Zero Commissions</li>
+                        <li>Zero Deposit Fees</li>
+                    </ul>
+                    <span class="uk-margin-large-left">
+                        <a href="#" class="uk-button uk-button-secondary uk-button-large uk-border-rounded">Open your account<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="pt-1 pb-5 pt-md-2 pb-md-5 py-lg-5 in-avo-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-5 position-relative">
+                    <img class="img-decor" src="{{asset('avo-assets/img/in-avo-3-decor-1.svg')}}" alt="decor">
+                    {{-- <div class="card card-body card-tv">
+                        <div id="tradingview-widget"></div>
+                    </div> --}}
+                </div>
+                <div class="col-md-12 col-lg-7">
+                    <h2>Find the products that <span class="text-highlight">match your needs</span> and desired risk level.</h2>
+                    <p>Sed ut perspiciatis unde omnis natus error voluptatem accusantium doloreme laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-1 mt-2">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center">
+                                    <div class="icon-wrap icon-wrap-micro bg-yellow mb-0">
+                                        EQ
+                                    </div>
+                                    <p class="fw-bold small text-primary mb-0">Stocks</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center">
+                                    <div class="icon-wrap icon-wrap-micro bg-green mb-0">
+                                        ET
+                                    </div>
+                                    <p class="fw-bold small text-primary mb-0">ETFs</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center">
+                                    <div class="icon-wrap icon-wrap-micro bg-red mb-0">
+                                        CM
+                                    </div>
+                                    <p class="fw-bold small text-primary mb-0">Commodities</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center">
+                                    <div class="icon-wrap icon-wrap-micro bg-blue mb-0">
+                                        MF
+                                    </div>
+                                    <p class="fw-bold small text-primary mb-0">Mutual funds</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center">
+                                    <div class="icon-wrap icon-wrap-micro bg-grey mb-0">
+                                        FX
+                                    </div>
+                                    <p class="fw-bold small text-primary mb-0">Forex</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center">
+                                    <div class="icon-wrap icon-wrap-micro bg-lightgreen mb-0">
+                                        FX
+                                    </div>
+                                    <p class="fw-bold small text-primary mb-0">Bond</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center">
+                                    <div class="icon-wrap icon-wrap-micro bg-purple mb-0">
+                                        CT
+                                    </div>
+                                    <p class="fw-bold small text-primary mb-0">Crypto</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center">
+                                    <div class="icon-wrap icon-wrap-micro bg-orange mb-0">
+                                        LO
+                                    </div>
+                                    <p class="fw-bold small text-primary mb-0">Listed options</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center">
+                                    <div class="icon-wrap icon-wrap-micro bg-lightgrey mb-0">
+                                        FU
+                                    </div>
+                                    <p class="fw-bold small text-primary mb-0">Futures</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-link link-primary text-decoration-none my-2 px-0">See more instruments<i class="fas fa-arrow-right ms-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="uk-section uk-padding-remove-vertical in-equity-12">
+        <div class="uk-container uk-margin-bottom">
+            <div class="uk-width-1-1@m">
+                <div class="uk-card uk-card-secondary uk-card-body uk-border-rounded uk-box-shadow-medium uk-background-contain uk-background-top-center" data-src="img/in-equity-12-bg.png" data-uk-img>
+                    <div class="uk-grid-small uk-child-width-1-2@m" data-uk-grid>
+                        <div>
+                            <h2>Begin trading in three steps</h2>
+                        </div>
+                        <div class="uk-flex uk-flex-right uk-flex-middle button-app">
+                            <a href="#"><img src="{{asset('alt-assets/img/in-app-store.svg')}}" data-src="img/in-app-store.svg" alt="app-store" data-uk-img data-width data-height></a>
+                            <a href="#" class="uk-margin-left"><img src="{{asset('alt-assets/img/in-google-play.svg')}}" data-src="img/in-google-play.svg" alt="google-play" data-uk-img data-width data-height></a>
+                            <a href="#" class="uk-button uk-button-primary uk-border-rounded uk-margin-left">Open account<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
+                        </div>
+                        <div class="uk-width-expand@m">
+                            <div class="uk-flex uk-flex-left uk-margin-top in-steps">
+                                <div class="uk-margin-right">
+                                    <span class="in-icon-wrap circle">1</span>
+                                </div>
+                                <div class="uk-margin-right">
+                                    <h5 class="uk-margin-remove">Register</h5>
+                                    <p class="uk-margin-small-top">Choose an account type and submit your application</p>
+                                </div>
+                            </div>
+                            <div class="uk-flex uk-flex-left uk-margin-top in-steps">
+                                <div class="uk-margin-right">
+                                    <span class="in-icon-wrap circle">2</span>
+                                </div>
+                                <div class="uk-margin-right">
+                                    <h5 class="uk-margin-remove">Fund</h5>
+                                    <p class="uk-margin-small-top">Fund your account using a wide range of funding methods.</p>
+                                </div>
+                            </div>
+                            <div class="uk-flex uk-flex-left uk-margin-top in-steps">
+                                <div class="uk-margin-right">
+                                    <span class="in-icon-wrap circle">3</span>
+                                </div>
+                                <div class="uk-margin-right">
+                                    <h5 class="uk-margin-remove">Trade</h5>
+                                    <p class="uk-margin-small-top">Access 180+ instruments across all asset classes on App</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-3-5@m">
+                            <img class="in-img-mockup" src="{{asset('alt-assets/img/in-equity-12-mockup.png')}}" data-src="" alt="mockup" width="643" data-height data-uk-img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
 
     <div class="uk-section in-equity-16">
         <div class="uk-container uk-margin-top uk-margin-large-bottom">
@@ -652,61 +1135,12 @@
     </div>
 
 
-    <div class="uk-section uk-padding-remove-vertical in-equity-12">
-        <div class="uk-container uk-margin-bottom">
-            <div class="uk-width-1-1@m">
-                <div class="uk-card uk-card-secondary uk-card-body uk-border-rounded uk-box-shadow-medium uk-background-contain uk-background-top-center" data-src="img/in-equity-12-bg.png" data-uk-img>
-                    <div class="uk-grid-small uk-child-width-1-2@m" data-uk-grid>
-                        <div>
-                            <h2>Begin trading in three steps</h2>
-                        </div>
-                        <div class="uk-flex uk-flex-right uk-flex-middle button-app">
-                            <a href="#"><img src="{{asset('alt-assets/img/in-app-store.svg')}}" data-src="img/in-app-store.svg" alt="app-store" data-uk-img data-width data-height></a>
-                            <a href="#" class="uk-margin-left"><img src="{{asset('alt-assets/img/in-google-play.svg')}}" data-src="img/in-google-play.svg" alt="google-play" data-uk-img data-width data-height></a>
-                            <a href="#" class="uk-button uk-button-primary uk-border-rounded uk-margin-left">Open account<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
-                        </div>
-                        <div class="uk-width-expand@m">
-                            <div class="uk-flex uk-flex-left uk-margin-top in-steps">
-                                <div class="uk-margin-right">
-                                    <span class="in-icon-wrap circle">1</span>
-                                </div>
-                                <div class="uk-margin-right">
-                                    <h5 class="uk-margin-remove">Register</h5>
-                                    <p class="uk-margin-small-top">Choose an account type and submit your application</p>
-                                </div>
-                            </div>
-                            <div class="uk-flex uk-flex-left uk-margin-top in-steps">
-                                <div class="uk-margin-right">
-                                    <span class="in-icon-wrap circle">2</span>
-                                </div>
-                                <div class="uk-margin-right">
-                                    <h5 class="uk-margin-remove">Fund</h5>
-                                    <p class="uk-margin-small-top">Fund your account using a wide range of funding methods.</p>
-                                </div>
-                            </div>
-                            <div class="uk-flex uk-flex-left uk-margin-top in-steps">
-                                <div class="uk-margin-right">
-                                    <span class="in-icon-wrap circle">3</span>
-                                </div>
-                                <div class="uk-margin-right">
-                                    <h5 class="uk-margin-remove">Trade</h5>
-                                    <p class="uk-margin-small-top">Access 180+ instruments across all asset classes on App</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="uk-width-3-5@m">
-                            <img class="in-img-mockup" src="{{asset('alt-assets/img/in-equity-12-mockup.png')}}" data-src="" alt="mockup" width="643" data-height data-uk-img>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 
 
-    <div class="uk-section uk-section-primary uk-preserve-color in-equity-14 uk-background-contain uk-background-top-center" data-src="{{asset('alt-assets/img/in-equity-14-bg.svg')}}" data-uk-img>
+
+    <div class="uk-section uk-section-secondary uk-preserve-color in-equity-14 uk-background-contain uk-background-top-center" data-src="{{asset('alt-assets/img/in-equity-14-bg.svg')}}" data-uk-img>
         <div class="uk-container uk-margin-small-bottom">
             <div class="uk-child-width-1-2@m uk-flex uk-flex-middle" data-uk-grid>
                 <div>
@@ -831,191 +1265,14 @@
     </section> --}}
     <!-- section content end -->
     <!-- section content begin -->
-    <section class="py-5 in-avo-5 bg-white">
-        <div class="row bg-white">
-            <div class="col-md-6">
-                <img src="{{asset('assets/img/home-ard-hisa.png')}}" class="img-fluid w-100 h-100" alt="">
-            </div>
-            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
-                <h2 class="display-4">
-                  Free Transfers   
-                </h2>
-                <h2 class="display-4">
-                    & Low 
-                </h2>
-                <h2 class="display-4">
-                    Cross-border Rates
-                </h2>
-                <p>More money stays in your pocket, and more money arrives in theirs.
-
-
-                </p>
-            </div>
-        </div>
-        
-        {{-- <div class="row bg-white">
-
-            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
-                <h2 class="display-4">
-                    As Fast   
-                </h2>
-                <h2 class="display-4">
-                    & Easy 
-                </h2>
-                <h2 class="display-4">
-                    as Sending a Text
-                </h2>
-                <p>More money stays in your pocket, and more money arrives in theirs.
-                </p>
-            </div>
-
-            <div class="col-md-6">
-                <img src="{{asset('assets/img/home-ard-hisa-1.png')}}" class="img-fluid w-100 h-100" alt="">
-            </div>
-        </div> --}}
-
-    </section>
-
-
-    <div class="uk-section uk-section-primary uk-preserve-color in-equity-14 uk-background-contain uk-background-top-center" data-src="{{asset('alt-assets/img/in-equity-14-bg.svg')}}" data-uk-img>
-        <div class="uk-container uk-margin-small-bottom">
-            <div class="uk-child-width-1-2@m uk-flex uk-flex-middle" data-uk-grid>
-                <div>
-                    <div class="uk-flex uk-flex-left uk-flex-middle">
-                        <div class="uk-margin-right in-award-logo">
-                            <img src="img/in-lazy.gif" data-src="{{asset('alt-assets/img/in-equity-5-award-3.svg')}}" alt="award" width="128" data-height data-uk-img>
-                        </div>
-                        <div class="in-award-badge">
-                            <h3 class="uk-margin-remove">Traders #1 Choice</h3>
-                            <h4 class="uk-margin-remove-top uk-margin-small-bottom uk-text-uppercase in-heading-thin">True ECN Account</h4>
-                            <p class="uk-text-small uk-margin-remove uk-visible@m">Voted by industry professionals</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="uk-flex uk-flex-right uk-flex-middle right-content">
-                    <ul class="uk-list in-list-check uk-margin-remove-bottom uk-margin-right">
-                        <li>Zero Commissions</li>
-                        <li>Zero Deposit Fees</li>
-                    </ul>
-                    <span class="uk-margin-large-left">
-                        <a href="#" class="uk-button uk-button-secondary uk-button-large uk-border-rounded">Open your account<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 
-    <section class="pt-1 pb-5 pt-md-2 pb-md-5 py-lg-5 in-avo-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-lg-5 position-relative">
-                    <img class="img-decor" src="{{asset('avo-assets/img/in-avo-3-decor-1.svg')}}" alt="decor">
-                    {{-- <div class="card card-body card-tv">
-                        <div id="tradingview-widget"></div>
-                    </div> --}}
-                </div>
-                <div class="col-md-12 col-lg-7">
-                    <h2>Find the products that <span class="text-highlight">match your needs</span> and desired risk level.</h2>
-                    <p>Sed ut perspiciatis unde omnis natus error voluptatem accusantium doloreme laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
-                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-1 mt-2">
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="icon-wrap icon-wrap-micro bg-yellow mb-0">
-                                        EQ
-                                    </div>
-                                    <p class="fw-bold small text-primary mb-0">Stocks</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="icon-wrap icon-wrap-micro bg-green mb-0">
-                                        ET
-                                    </div>
-                                    <p class="fw-bold small text-primary mb-0">ETFs</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="icon-wrap icon-wrap-micro bg-red mb-0">
-                                        CM
-                                    </div>
-                                    <p class="fw-bold small text-primary mb-0">Commodities</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="icon-wrap icon-wrap-micro bg-blue mb-0">
-                                        MF
-                                    </div>
-                                    <p class="fw-bold small text-primary mb-0">Mutual funds</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="icon-wrap icon-wrap-micro bg-grey mb-0">
-                                        FX
-                                    </div>
-                                    <p class="fw-bold small text-primary mb-0">Forex</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="icon-wrap icon-wrap-micro bg-lightgreen mb-0">
-                                        FX
-                                    </div>
-                                    <p class="fw-bold small text-primary mb-0">Bond</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="icon-wrap icon-wrap-micro bg-purple mb-0">
-                                        CT
-                                    </div>
-                                    <p class="fw-bold small text-primary mb-0">Crypto</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="icon-wrap icon-wrap-micro bg-orange mb-0">
-                                        LO
-                                    </div>
-                                    <p class="fw-bold small text-primary mb-0">Listed options</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="icon-wrap icon-wrap-micro bg-lightgrey mb-0">
-                                        FU
-                                    </div>
-                                    <p class="fw-bold small text-primary mb-0">Futures</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" class="btn btn-link link-primary text-decoration-none my-2 px-0">See more instruments<i class="fas fa-arrow-right ms-1"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
+
+
+
+
+
 
     
     
